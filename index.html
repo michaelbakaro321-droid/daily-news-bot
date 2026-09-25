@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daily News Bot delivers concise Ghana, technology and world news summaries through WhatsApp.">
+  <title>Daily News Bot</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
+    header {
+      background: #102a43;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 1.25rem; font-weight: 700; }
+    nav a { color: white; text-decoration: none; margin-left: 22px; font-size: .95rem; }
+    .hero {
+      padding: 90px 8% 80px;
+      text-align: center;
+      background: white;
+    }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); margin-bottom: 18px; }
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: #52606d;
+      font-size: 1.12rem;
+    }
+    .button {
+      display: inline-block;
+      background: #1f7a4d;
+      color: white;
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+    section { padding: 65px 8%; }
+    .section-title { text-align: center; margin-bottom: 38px; }
+    .section-title h2 { font-size: 2rem; margin-bottom: 8px; }
+    .section-title p { color: #627d98; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      max-width: 1050px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(16,42,67,.07);
+    }
+    .card .icon { font-size: 2rem; margin-bottom: 12px; }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #627d98; }
+    .how {
+      background: #eef2f7;
+    }
+    .steps {
+      max-width: 800px;
+      margin: auto;
+      display: grid;
+      gap: 16px;
+    }
+    .step {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .number {
+      min-width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #102a43;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+    }
+    footer {
+      background: #102a43;
+      color: #d9e2ec;
+      text-align: center;
+      padding: 28px 8%;
+      font-size: .9rem;
+    }
+    @media (max-width: 760px) {
+      header { padding: 18px 5%; }
+      nav { display: none; }
+      section, .hero { padding-left: 5%; padding-right: 5%; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">📰 Daily News Bot</div>
+    <nav>
+      <a href="#news">News</a>
+      <a href="#how">How It Works</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Daily News, Simply Delivered.</h1>
+      <p>
+        Daily News Bot provides concise summaries of important Ghana,
+        technology and world news, delivered directly through WhatsApp.
+      </p>
+      <a class="button" href="#news">Explore News Categories</a>
+    </section>
+
+    <section id="news">
+      <div class="section-title">
+        <h2>What We Cover</h2>
+        <p>Stay informed without having to read through endless headlines.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🇬🇭</div>
+          <h3>Ghana News</h3>
+          <p>Important developments and current stories from Ghana.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Technology</h3>
+          <p>Useful updates from technology, telecoms, AI and the digital world.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌍</div>
+          <h3>World News</h3>
+          <p>Key international stories summarized in a quick, easy-to-read format.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="how">
+      <div class="section-title">
+        <h2>How It Works</h2>
+        <p>A simple way to keep up with the news.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="number">1</div>
+          <div><strong>News is collected</strong><br>Stories are gathered from selected news sources.</div>
+        </div>
+        <div class="step">
+          <div class="number">2</div>
+          <div><strong>Stories are summarized</strong><br>Long articles are turned into concise news summaries.</div>
+        </div>
+        <div class="step">
+          <div class="number">3</div>
+          <div><strong>News is delivered</strong><br>Daily updates can be sent to subscribers through WhatsApp.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Daily News Bot. News summaries are provided for informational purposes.</p>
+  </footer>
+</body>
+</html>
